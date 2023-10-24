@@ -77,13 +77,17 @@ function html() {
         .pipe(dest('./dist'));
 }
 // Watch files
-
+function fonts() {
+    return src('./app/fonts/*')
+        .pipe(dest('./dist/fonts'));
+}
 function watchFiles() {
     watch('./app/scss/*', css);
     watch('./app/js/*', js);
     watch('./app/img/*', img);
     watch('./app/*', html);
 }
+
 
 // BrowserSync
 
@@ -99,4 +103,4 @@ function browserSync() {
 // Tasks to define the execution of the functions simultaneously or in series
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(js, css, img, html), browserSync, watchFiles);
+exports.default = series(clear, parallel(js, css, img, fonts, html), browserSync, watchFiles);
