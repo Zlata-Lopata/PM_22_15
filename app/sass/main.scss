@@ -357,7 +357,7 @@ body {
   margin-right: auto;
   margin-top: 40px;
   width: 1250px;
-  height: 360px;
+  height: 350px;
   background-color: #fff;
   border: 1px solid #ccc ;
   border-radius: 6px;
@@ -406,6 +406,15 @@ body {
   border-bottom-right-radius: 6px;
   border-right: 1px solid #ccc ;
 }
+.com-course1{
+  background-color: #f6f8fc;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
 .com-course{
   height: 60px;
   width: 100%;
@@ -415,9 +424,9 @@ body {
   align-items: center;
 }
 .text-course{
-  line-height: 250%;
   margin: 5px 0 5px 20px;
   color: #7f8c8d;
+  align-items: center;
 }
 .show-more{
   height: 40px;
@@ -438,9 +447,7 @@ body {
   height: 13px;
   margin-right: 25px;
 }
-.text-course{
-  align-items: center;
-}
+
 .ques-img{
   margin: 0 3px 0 20px;
 }
@@ -492,9 +499,71 @@ body {
   font-size: 18px;
 }
 .friend-activity{
-  width: 100%;
+  width: 810px;
 }
 .active-up{
   border-bottom: 1px solid #ccc;
   font-weight: bold;
+}
+.comment-activity{
+  padding: 0 20px;
+}
+.comment-activity1{
+  padding: 0 20px;
+  background-color: #f6f8fc;
+}
+.com-activ{
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+  align-items: center;
+  display: flex;
+}
+.photo{
+  border-radius: 80%;
+  margin: 0;
+  height: 40px;
+  width: 40px;
+}
+.text-name{
+  color: #3498db;
+  margin:0 10px;
+}
+.comment{
+  color: #7f8c8d;
+  margin-right:4px;
+}
+
+.time{
+  margin-left: auto;
+}
+.time-img{
+  height: 11px;
+}
+.time1{
+  font-size: 13px;
+  color: #c1c7cb;
+}
+.rectangle-violet{
+  background-color: #8e44ad;
+  height: 60px;
+  width: 5px;
+  position: absolute;
+  top: 501px;
+}
+.rectangle-violet-act{
+  background-color: #8e44ad;
+  height: 60px;
+  width: 5px;
+  position: absolute;
+  top: 890px;
+}
+.hand2{
+  position: absolute;
+  top: 545px;
+  right: 750px;
+}
+.hand3{
+  position: absolute;
+  top: 925px;
+  right: 300px;
 }
