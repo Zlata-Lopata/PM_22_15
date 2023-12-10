@@ -9,9 +9,6 @@
   src: url("/fonts/ProximaNova-Regular.woff");
 }
 body {
-  display: grid;
-  grid-template-rows: 10% 1fr 10%;
-  grid-template-columns: 1fr;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -19,36 +16,67 @@ body {
 }
 
 .top {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   align-items: center;
   padding: 0;
   height: 90px;
+
 }
 
 .top-right {
+  flex: 1;
   display: flex;
   align-items: center;
+  padding: 23px;
+  border: 1px solid #ccc;
 }
+
 
 .top-buttons img {
-  margin-right: 10px;
+  margin-left: auto;
+  overflow: auto;
+  margin-right: 25px;
+  padding-left: 5px;
+  position: relative;
+
 }
 
+.red-circle{
+  position: absolute;
+  top: -12px;
+  left: 112px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+}
+
+
+.number{
+  position: absolute;
+  font-size: 13px;
+  color: aliceblue;
+  position: absolute;
+  top: -14px;
+  left: 116px;
+}
 .search-box {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 
 .search-box input {
   padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 0;
+  text-align: right;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #95a5a6;
 }
 
 .search-box img {
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-right: 7px;
 }
 
 .user-info {
@@ -56,11 +84,9 @@ body {
   align-items: center;
   width: 200px;
   height: 90px;
+  padding: 0;
   background-color: #2ecc71;
-  font-size: 13px;
-  letter-spacing: 0px;
-  line-height: 60px;
-  color: #ffffff;
+
 }
 
 .user-photo {
@@ -73,47 +99,402 @@ body {
   font-size: 13px;
   color: #ffffff;
   margin-top: auto;
+  letter-spacing: 0px;
+  line-height: 60px;
 }
 .logo {
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .content {
-  display: grid;
-  grid-template-columns: 20% 1fr;
+  display: flex;
+  padding:0;
 }
 
 .block-a {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+  background-color: #34495e;
+  width: 200px;
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
-
+.menu-left{
+  padding: 10px;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: 0;
+}
+.menu-left-2{
+  color: #95a5a6;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: 0;
+}
 .block-a ul {
   list-style: none;
   padding: 0;
 }
 
 .block-a li {
-  margin: 10px 0;
+  margin: 13px 0;
+  padding: 1px;
+  height: 50px;
+}
+.block-a img{
+  margin-left: 25px;
+  margin-right: 15px;
 }
 
-.block-b {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+.block-b-nav{
+  flex: 1;
+  align-items: center;
+
+}
+.user-profile{
   padding: 10px;
+  margin: 10px 0 10px 10px;
+}
+.avatar{
+  border-radius: 50%;
+  margin-right: 25px;
+  margin-left: 30px;
+  height: 100px;
+}
+.user-name{
+  font-size: 24px;
+  letter-spacing: 1px;
+
+  margin-bottom: 5px;
+  line-height: 23px;
+  color: #2c3e50;
+  font-weight: bold;
+  width: 280px;
+}
+.user-exp{
+  height: 20px;
+  display: flex;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr) repeat(2, 1fr);
-  gap: 10px;
+.user-information{
+  margin-top: 35px;
+  width: 215px;
+}
+.user-rating{
+  margin-top: 32px;
 }
 
-.grid-item {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border: 1px solid #ccc;
+.information-flex{
+  display: flex;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  font-family: "Proxima Nova";
+}
+.tochka{
+  margin: 10px 10px 0 10px;
+  height: 2px;
+}
+.exp{
+  color: #7f8c8d;
+  margin: 2px 0 4px 0;
+}
+.more{
+  color: #3498db;
+  margin: 2px 0 4px 0;
+}
+.exp-flex{
+  display: flex;
+  align-items: center;
+}
+.exp-img{
+  margin: 0 5px 0 0;
+}
+.buttons-right{
+  margin-left: auto;
+  padding: 50px;
+}
+.buttons-right img{
+  margin-left: 8px;
+}
+.circle1{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 141px;
+  right: 103px;
+  border: 2px solid #ccc;
+}
+.white-circle{
+  position: absolute;
+  top: 148px;
+  right: 114px;
+
+}
+.circle2{
+  width: 39px;
+  height: 39px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  position: absolute;
+  top: 141px;
+  right: 51px;
+}
+.green-circle{
+  position: absolute;
+  top: 148px;
+  right: 60px;
+}
+.hand{
+  position: absolute;
+  top: 175px;
+  right: 60px;
+}
+.rectangle {
+  width: 50px;
+  height: 20px;
+  background-color: #2c3e50;
+  position: absolute;
+  top: 110px;
+  right: 47px;
+  border-radius: 12%;
+}
+.triangle {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 10px solid #2c3e50;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 125px;
+  right: 62px;
+}
+.inscription-text{
+  position: absolute;
+  top: 87px;
+  right: 52px;
+  font-size: 12px;
+  line-height: 66px;
+  color: #ffffff;
+  font-family: "Proxima Nova";
+}
+.menu-line-flex{
+  display: flex;
+}
+.menu-line {
+  height: 50px;
+  padding: 0;
+  margin: 0 35px 0 50px;
+  font-size: 14px;
+  line-height: 58px;
+  color: #2c3e50;
+  font-weight: 700;
+  font-family: Proxima Nova;
+}
+.rectangle-green{
+  width: 74px;
+  height: 4px;
+  background-color: #27ae60;
+  position: absolute;
+  top: 277px;
+  left: 251px;
+}
+
+
+.information{
+  border-top: 1px solid #ccc ;
+  background-color: #ecf0f1;
+  padding-bottom: 100px;
+}
+.up-block{
+  display: flex;
+  margin: 0 30px;
+}
+.course{
+  width: 380px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #fff;
+  border-left: 1px solid #ccc ;
+  border-bottom:1px solid #ccc ;
+  border-radius: 6px;
+}
+.questions{
+  width: 380px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #fff;
+  border-left: 1px solid #ccc ;
+  border-bottom:1px solid #ccc ;
+  border-radius: 6px;
+}
+.exam{
+  width: 380px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: #fff;
+  border-left: 1px solid #ccc ;
+  border-bottom: 1px solid #ccc ;
+  border-radius: 6px;
+}
+.down-block{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 1250px;
+  height: 360px;
+  background-color: #fff;
+  border: 1px solid #ccc ;
+  border-radius: 6px;
+}
+.choice{
+  display: flex;
+  padding: 0;
+  height: 120px;
+
+}
+.left-choice{
+  width: 50%;
+  border-top-left-radius: 6px;
+  border-top: 1px solid #ccc ;
+}
+.number-big{
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0 0;
+}
+.color-course{
+  color: #e67333;
+}
+.color-questions{
+  color: #8e44ad;
+}
+.color-exam{
+  color: #16a085;
+}
+.text-up{
+  font-size: 16px;
+  text-align: center;
+}
+
+.right-choice{
+  width: 50%;
+  background-color: #ecf0f1;
+  border-left: 1px solid #ccc ;
+  border-bottom: 1px solid #ccc ;
+  color: #95a5a6
+}
+.comments{
+  height: 280px;
+  width: 100%;
+  border-bottom-right-radius: 6px;
+  border-right: 1px solid #ccc ;
+}
+.com-course{
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.text-course{
+  line-height: 250%;
+  margin: 5px 0 5px 20px;
+  color: #7f8c8d;
+}
+.show-more{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.show-more-text{
+  text-align: right;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+.show-more-img{
+  height: 13px;
+  margin-right: 25px;
+}
+.text-course{
+  align-items: center;
+}
+.ques-img{
+  margin: 0 3px 0 20px;
+}
+.number-sms{
+  color: #7f8c8d;
+  line-height: 250%;
+  margin: 5px 0;
+  width: 15px;
+}
+.procent{
+  color: #7f8c8d;
+  font-size: 13px;
+  margin-bottom: auto;
+  text-align: center;
+
+}
+.diagram-nav{
+  margin-left: 20px;
+  margin-top: auto;
+}
+.diagram1{
+  width: 35px;
+  height: 20px;
+  background-color: #1abc9c;
+}
+.diagram2{
+  width: 35px;
+  height: 7px;
+  background-color: #1abc9c;
+}
+.diagram3{
+  width: 35px;
+  height: 10px;
+  background-color: #1abc9c;
+}
+.diagram4{
+  width: 35px;
+  height: 28px;
+  background-color: #1abc9c;
+}
+.experience{
+  border-right: 1px solid #ccc;
+  width: 440px;
+  height: 100%;
+}
+.Exp-gained{
+  margin: 20px;
+  color: #7f8c8d;
+  font-size: 18px;
+}
+.friend-activity{
+  width: 100%;
+}
+.active-up{
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
 }

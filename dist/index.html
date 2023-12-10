@@ -10,53 +10,251 @@
 <header class="top">
     <div class="user-info">
         <img src="/img/avatar.png" alt="User Photo" class="user-photo">
-        <p class="name-up">HOANG NGUYEN </p>
+        <p class="name-up">HOANG NGUYEN</p>
     </div>
     <div class="top-right">
-        <div class="top-buttons d-flex">
+        <div class="top-buttons d-flex position-relative">
             <img src="/img/іконка людини.png" alt="Button 1">
             <img src="/img/повідомлення.png" alt="Button 2">
+
             <img src="/img/дзвіночок.png" alt="Button 3">
+            <div class="red-circle"></div>
+            <p class="number">2</p>
         </div>
         <div class="logo">
             <img src="/img/logo.png" alt="logo">
         </div>
         <div class="search-box">
             <input type="text" placeholder="Type for search">
-</div>
+            <img src="/img/search.png" alt="Search">
+        </div>
     </div>
 </header>
 
 <main class="content">
     <nav class="block-a">
         <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Course</a></li>
-            <li><a href="#">Exam</a></li>
-            <li><a href="#">Q&A</a></li>
-            <li><a href="#">News</a></li>
+            <li style="background-color:#243342;"><img src="/img/dashboard.png" alt="dashboard">
+                <a class="menu-left" href="#">DASHBOARD</a></li>
+            <li><img src="/img/course.png" alt="course">
+                <a class="menu-left-2" href="#">COURSE</a></li>
+            <li><img src="/img/exam.png" alt="exam">
+                <a class="menu-left-2" href="#">EXAM</a></li>
+            <li><img src="/img/q&a.png" alt="q&a">
+                <a class="menu-left-2" href="#">Q&A</a></li>
+            <li><img src="/img/news.png" alt="news">
+                <a class="menu-left-2" href="#">NEWS</a></li>
         </ul>
     </nav>
-    <section class="block-b">
-        <div class="grid-container">
-            <div class="grid-item">
-                <!-- Dashboard -->
+    <nav class="block-b-nav">
+        <div class="d-flex profile">
+            <div class="user-profile">
+                <img src="/img/avatar.png" alt="user-photo" class="avatar">
             </div>
-            <div class="grid-item">
-                <!-- Course -->
+            <div class="user-nav">
+                <div class="user-information">
+                    <h1 class="user-name">HOANG NGUYEN</h1>
+                </div>
+                <div class="information-flex">
+                    <p class="exp">Student </p>
+                    <img src="/img/точка.png" alt="tochka" class="tochka">
+                    <div class="more" href="#">Learn more</div>
+                </div>
+                <div class="exp-flex">
+                    <img src="/img/exp.png" alt="exp" class="exp-img">
+                    <p class="exp">8,782 exp</p>
+                </div>
             </div>
-            <div class="grid-item">
-                <!-- Exam -->
+            <div class="user-rating">
+                <img src="/img/Star red.png" alt="red star" class="red-star">
+                <img src="/img/Star red.png" alt="red star" class="red-star">
+                <img src="/img/Star red.png" alt="red star" class="red-star">
+                <img src="/img/Star white.png" alt="white star" class="white-star">
+                <img src="/img/Star white.png" alt="white star" class="white-star">
             </div>
-            <div class="grid-item">
-                <!-- Q&A -->
-            </div>
-            <div class="grid-item">
-                <!--  News -->
+            <div class="buttons-right">
+                <div class="circle1"></div>
+                <div class="white-circle">
+                    <img src="/img/pencil.png" alt="pencil">
+                </div>
+                <!--<img src="/img/зелений кружечок.png" alt="green circle">-->
+                <div class="circle2"></div>
+                <div class="green-circle">
+                    <img src="/img/exit.png" alt="exit">
+                </div>
+                <div class="hand">
+                    <img src="/img/hand.png" alt="hand">
+                </div>
+                <div class="inscription">
+                    <div class="triangle"></div>
+                    <div class="rectangle"></div>
+                    <p class="inscription-text">Log out</p>
+                </div>
             </div>
         </div>
-    </section>
+        <nav class="sections">
+            <div class="menu-line-flex">
+                <div class="menu-line" href="#">KNOWLEDGE</div>
+                <div class="menu-line" href="#">COURSE</div>
+                <div class="menu-line" href="#">EXAM</div>
+                <div class="menu-line" href="#">Q&A</div>
+                <div class="menu-line" href="#">NEWS</div>
+                <div class="menu-line" href="#">ACTIVITY</div>
+                <div class="menu-line"href="#">FRIENDS</div>
+                <div class="rectangle-green"></div>
+            </div>
+
+            <div class="information">
+                <div class="up-block">
+                    <div class="course">
+                        <div class="choice">
+                            <div class="left-choice">
+                                <div class="color-course">
+                                    <div class="number-big"><span>12</span></div>
+                                    <div class="text-up">
+                                        <p>DONE COURSE</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="right-choice">
+                                <div class="number-big"><span>3</span></div>
+                                <div class="text-up">
+                                    <p>UNFINISHED COURSE</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="com-course">
+                               <p class="text-course">Basic for UX Designer</p>
+                            </div>
+                            <div class="com-course">
+                                <p class="text-course">10 steps to improve your wireframe</p>
+                            </div>
+                            <div class="com-course">
+                                <p class="text-course">A Better Way To Request App Ratings</p>
+                            </div>
+                            <div class="com-course">
+                                <p class="text-course">How To Speed Up Your WordPress Website</p>
+                            </div>
+                            <div class="show-more">
+                                <div class="show-more-text" href="#">Show more</div>
+                                <img src="/img/Show more znak.png" alt="show more" class="show-more-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="questions">
+                        <div class="choice">
+                            <div class="left-choice">
+                                <div class="color-questions">
+                                    <div class="number-big"><span>27</span></div>
+                                    <div class="text-up">
+                                        <p>ASKING QUESTIONS</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="right-choice">
+                                <div class="number-big"><span>7</span></div>
+                                <div class="text-up">
+                                    <p>ANSWERED QUESTIONS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="com-course">
+                                <div class="ques-img"><img src="/img/sms.png" alt="sms" class="sms"></div>
+                                <p class="number-sms">12</p>
+                                <p class="text-course">How to make good logo?</p>
+                            </div>
+                            <div class="com-course">
+                                <div class="ques-img"><img src="/img/sms.png" alt="sms" class="sms"></div>
+                                <p class="number-sms">3</p>
+                                <p class="text-course">What are the best mobile apps for...</p>
+                            </div>
+                            <div class="com-course">
+                                <div class="ques-img"><img src="/img/sms.png" alt="sms" class="sms"></div>
+                                <p class="number-sms">67</p>
+                                <p class="text-course">What's the difference between UI and...</p>
+                            </div>
+                            <div class="com-course">
+                                <div class="ques-img"><img src="/img/sms.png" alt="sms" class="sms"></div>
+                                <p class="number-sms">0</p>
+                                <p class="text-course">What logos include hidden messages...</p>
+                            </div>
+                            <div class="show-more">
+                                <div class="show-more-text" href="#">Show more</div>
+                                <img src="/img/Show more znak.png" alt="show more" class="show-more-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exam">
+                        <div class="choice">
+                            <div class="left-choice">
+                                <div class="color-exam">
+                                    <div class="number-big"><span>19</span></div>
+                                    <div class="text-up">
+                                        <p>FOLLOWING EXAMS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-choice">
+                                <div class="number-big"><span>88</span></div>
+                                <div class="text-up">
+                                    <p>DONE EXAMS</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div class="com-course">
+                                <div class="diagram-nav">
+                                    <p class="procent">70%</p>
+                                    <div class="diagram1"></div>
+                                </div>
+                                <p class="text-course">Junior web designer</p>
+                            </div>
+                            <div class="com-course">
+                                <div class="diagram-nav">
+                                    <p class="procent">20%</p>
+                                    <div class="diagram2"></div>
+                                </div>
+                                <p class="text-course">Which is the best way to pass the PMP...</p>
+                            </div>
+                            <div class="com-course">
+                                <div class="diagram-nav">
+                                    <p class="procent">35%</p>
+                                    <div class="diagram3"></div>
+                                </div>
+                                <p class="text-course">What are great examples of viral UX/UI...</p>
+                            </div>
+                            <div class="com-course">
+                                <div class="diagram-nav">
+                                    <p class="procent">90%</p>
+                                    <div class="diagram4"></div>
+                                </div>
+                                <p class="text-course">Why is consistency important in design?</p>
+                            </div>
+                            <div class="show-more">
+                                <div class="show-more-text" href="#">Show more</div>
+                                <img src="/img/Show more znak.png" alt="show more" class="show-more-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="down-block">
+                    <div class="experience">
+                        <div class="Exp-gained"><p>Experience gained</p></div>
+                        <div class="charts"></div>
+                    </div>
+                    <div class="friend-activity">
+                        <div class="active-up">
+                            <p class="Exp-gained">FRIEND ACTIVITY</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </nav>
 </main>
-<footer class="bottom"></footer>
 </body>
 </html>
