@@ -81,11 +81,16 @@ function fonts() {
     return src('./app/fonts/*')
         .pipe(dest('./dist/fonts'));
 }
+function json() {
+    return src('./app/json/*')
+        .pipe(dest('./dist/json'));
+}
 function watchFiles() {
     watch('./app/scss/*', css);
     watch('./app/js/*', js);
     watch('./app/img/*', img);
     watch('./app/*', html);
+    watch('./app/json/*', json);
 }
 
 
@@ -103,4 +108,4 @@ function browserSync() {
 // Tasks to define the execution of the functions simultaneously or in series
 
 exports.watch = parallel(watchFiles, browserSync);
-exports.default = series(clear, parallel(js, css, img, fonts, html), browserSync, watchFiles);
+exports.default = series(clear, parallel(js, css, img, fonts, json, html), browserSync, watchFiles);

@@ -14,15 +14,12 @@ body {
   padding: 0;
   font-family: "Proxima Nova";
 }
-
 .top {
   display: flex;
   align-items: center;
   padding: 0;
   height: 90px;
-
 }
-
 .top-right {
   flex: 1;
   display: flex;
@@ -30,8 +27,6 @@ body {
   padding: 23px;
   border: 1px solid #ccc;
 }
-
-
 .top-buttons img {
   margin-left: auto;
   overflow: auto;
@@ -40,7 +35,6 @@ body {
   position: relative;
 
 }
-
 .red-circle{
   position: absolute;
   top: -12px;
@@ -50,8 +44,6 @@ body {
   border-radius: 50%;
   background-color: #e74c3c;
 }
-
-
 .number{
   position: absolute;
   font-size: 13px;
@@ -64,21 +56,18 @@ body {
   display: flex;
   align-items: center;
 }
-
 .search-box input {
   padding: 5px;
   border: 0;
   text-align: right;
   font-size: 14px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: #95a5a6;
 }
-
 .search-box img {
   margin-left: 5px;
   margin-right: 7px;
 }
-
 .user-info {
   display: flex;
   align-items: center;
@@ -86,9 +75,7 @@ body {
   height: 90px;
   padding: 0;
   background-color: #2ecc71;
-
 }
-
 .user-photo {
   border-radius: 50%;
   margin-right: 7%;
@@ -99,21 +86,18 @@ body {
   font-size: 13px;
   color: #ffffff;
   margin-top: auto;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   line-height: 60px;
 }
 .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
-
 .content {
   display: flex;
   padding:0;
 }
-
 .block-a {
   background-color: #34495e;
   width: 200px;
@@ -143,7 +127,6 @@ body {
   list-style: none;
   padding: 0;
 }
-
 .block-a li {
   margin: 13px 0;
   padding: 1px;
@@ -153,11 +136,9 @@ body {
   margin-left: 25px;
   margin-right: 15px;
 }
-
 .block-b-nav{
   flex: 1;
   align-items: center;
-
 }
 .user-profile{
   padding: 10px;
@@ -172,7 +153,6 @@ body {
 .user-name{
   font-size: 24px;
   letter-spacing: 1px;
-
   margin-bottom: 5px;
   line-height: 23px;
   color: #2c3e50;
@@ -183,7 +163,6 @@ body {
   height: 20px;
   display: flex;
 }
-
 .user-information{
   margin-top: 35px;
   width: 215px;
@@ -191,13 +170,11 @@ body {
 .user-rating{
   margin-top: 32px;
 }
-
 .information-flex{
   display: flex;
   font-size: 16px;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   line-height: 18px;
-  font-family: "Proxima Nova";
 }
 .tochka{
   margin: 10px 10px 0 10px;
@@ -238,7 +215,6 @@ body {
   position: absolute;
   top: 148px;
   right: 114px;
-
 }
 .circle2{
   width: 39px;
@@ -252,11 +228,6 @@ body {
 .green-circle{
   position: absolute;
   top: 148px;
-  right: 60px;
-}
-.hand{
-  position: absolute;
-  top: 175px;
   right: 60px;
 }
 .rectangle {
@@ -284,7 +255,6 @@ body {
   font-size: 12px;
   line-height: 66px;
   color: #ffffff;
-  font-family: "Proxima Nova";
 }
 .menu-line-flex{
   display: flex;
@@ -297,7 +267,6 @@ body {
   line-height: 58px;
   color: #2c3e50;
   font-weight: 700;
-  font-family: Proxima Nova;
 }
 .rectangle-green{
   width: 74px;
@@ -406,15 +375,7 @@ body {
   border-bottom-right-radius: 6px;
   border-right: 1px solid #ccc ;
 }
-.com-course1{
-  background-color: #f6f8fc;
-  height: 60px;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
+
 .com-course{
   height: 60px;
   width: 100%;
@@ -422,6 +383,25 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
+
+  &.yellow-hover {
+    &:hover {
+      background-color: #f8ece5;
+      border-left: 4px solid #e67333
+    }
+  }
+  &.violet-hover {
+    &:hover {
+      background-color: #f6f8fc;
+      border-left: 4px solid #8e44ad
+    }
+  }
+  &.green-hover {
+    &:hover {
+      background-color: #e8f7f4;
+      border-left: 4px solid #19bb9b
+    }
+  }
 }
 .text-course{
   margin: 5px 0 5px 20px;
@@ -462,7 +442,6 @@ body {
   font-size: 13px;
   margin-bottom: auto;
   text-align: center;
-
 }
 .diagram-nav{
   margin-left: 20px;
@@ -507,11 +486,12 @@ body {
 }
 .comment-activity{
   padding: 0 20px;
+  &:hover {
+    background-color: #f6f8fc;
+    border-left: 4px solid #8e44ad
+  }
 }
-.comment-activity1{
-  padding: 0 20px;
-  background-color: #f6f8fc;
-}
+
 .com-activ{
   border-bottom: 1px solid #ccc;
   height: 60px;
@@ -543,27 +523,37 @@ body {
   font-size: 13px;
   color: #c1c7cb;
 }
-.rectangle-violet{
-  background-color: #8e44ad;
-  height: 60px;
-  width: 5px;
-  position: absolute;
-  top: 501px;
+
+.chart-1{
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  margin: 0 20px;
 }
-.rectangle-violet-act{
-  background-color: #8e44ad;
-  height: 60px;
-  width: 5px;
-  position: absolute;
-  top: 890px;
+.number-big1{
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  color: #2ecc71;
 }
-.hand2{
-  position: absolute;
-  top: 545px;
-  right: 750px;
+.myChart{
+  height: 90px !important;
+  width: 240px !important;
+  margin: 0 30px 0 0;
 }
-.hand3{
-  position: absolute;
-  top: 925px;
-  right: 300px;
+.down-chart{
+  margin: 7px 0 0 20px;
+  color: #7f8c8d;
+  font-size: 17px;
+}
+.lineChart{
+  width: 350px !important;
+  height: 130px !important;
+  margin: auto;
+}
+
+.text-chart{
+  font-size: 16px;
+  text-align: center;
+  color: #7f8c8d;;
 }
